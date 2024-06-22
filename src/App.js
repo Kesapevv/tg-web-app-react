@@ -1,22 +1,27 @@
 import './App.css';
-import {useEffect} from "react";
+import React, {useContext, useEffect} from "react";
 import {useTelegram} from "./hooks/useTelegram";
 import Header from "./components/Header/Header";
+import Coin from "./components/Coin/Coin";
+import {GlobalDataContext, GlobalDataProvider} from './hooks/GlobalDataProvider';
 
 function App() {
 
-    const {onToggleButton, tg} = useTelegram();
+    const {user, onClose, tg} = useTelegram();
+
+    // const { onTap, totalScore } = useContext(GlobalDataContext);
 
     useEffect(() => {
         tg.ready();
     }, [])
 
     return (
-        <div className="App">
-            <Header />
-            hello
-            <button onClick={onToggleButton}>toggle</button>
-        </div>
+        <GlobalDataProvider>
+            <div className="App">
+                <Header/>
+                {/*<button onClick={onTap}>click me</button>*/}
+            </div>
+        </GlobalDataProvider>
     );
 }
 
