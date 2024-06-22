@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    height: 100px;
+    height: 180px;
     display: flex;
     align-items: normal;
     justify-content: space-between;
@@ -9,12 +9,12 @@
 
 .referals {
     position: absolute;
-    left: 0;
+    right: 0;
     padding: 0 20px;
 }
 
 .totalScore {
-    font-size: 15px;
+    font-size: 25px;
     font-weight: normal;
     position: absolute;
     left: 50%;
@@ -22,9 +22,9 @@
 }
 
 .score {
-    font-size: 40px;
+    font-size: 80px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 50px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -32,6 +32,6 @@
 
 .username {
     position: absolute;
-    right: 0;
+    left: 0;
     padding: 0 20px;
 }

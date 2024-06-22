@@ -1,0 +1,16 @@
+.tabbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Изменено с space-between на center */
+    position: fixed;
+    bottom: 0;
+    padding: 0 20px; /* Добавлено для отступов внутри контейнера */
+}
+
+.tabbar .nav-link {
+    font-weight: bold; /* Жирный текст */
+    color: black; /* Черный цвет текста */
+    text-decoration: none; /* Убрать подчеркивание ссылки */
+}

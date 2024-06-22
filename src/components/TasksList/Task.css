@@ -1,0 +1,37 @@
+
+.task {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Отступ между задачами */
+}
+
+.containerTask {
+    display: flex;
+    flex-direction: column; /* Элементы теперь будут располагаться вертикально */
+    gap: 5px; /* Отступ между элементами */
+    height: auto; /* Высота будет определяться содержимым */
+    padding: 5px; /* Добавляем небольшой внутренний отступ */
+    align-items: flex-start; /* Выравнивание элементов слева */
+}
+
+.task-title {
+    font-weight: bold;
+    justify-content: left;
+    margin-left: 0;
+}
+
+.task-subtitle {
+    font-weight: normal;
+    justify-content: left;
+}
+
+.task-button {
+    width: 150px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}

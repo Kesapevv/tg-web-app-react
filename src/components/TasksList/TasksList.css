@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    height: 100vh;
+}
+
+.tasks-list {
+    background: gray;
+    border-radius: 30px;
+    width: 80%;
+    margin: 1%;
+    padding: 20px 30px;
+    align-items: normal;
+    justify-content: space-between;
+}
+
+

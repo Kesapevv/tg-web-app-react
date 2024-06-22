@@ -6,7 +6,7 @@ import { GlobalDataProvider } from './hooks/GlobalDataProvider'; // Импорт
 
 ReactDOM.render(
     <React.StrictMode>
-        <GlobalDataProvider> {/* Оберните App в GlobalDataProvider */}
+        <GlobalDataProvider>
             <App />
         </GlobalDataProvider>
     </React.StrictMode>,

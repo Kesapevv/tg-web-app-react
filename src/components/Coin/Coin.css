@@ -1,9 +1,10 @@
 .coin {
-    height: 150px;
-    width: 150px;
+    height: 350px;
+    width: 350px;
     background-color: #555;
     border-radius: 50%;
     position: absolute;
+    top: 22%;
     left: 50%;
     transform: translateX(-50%);
 }

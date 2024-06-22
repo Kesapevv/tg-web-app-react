@@ -14,15 +14,12 @@ const Header = () => {
             <span className="referals">Referals: {referals}</span>
             <span className="totalScore">Pedro Coins</span>
             <span className="score">{totalScore}</span>
-
-        </div>
+            <span className="username">
+                {user?.username}
+            </span></div>
     );
 };
 
 export default Header;
-
-// <span className="username">
-//                 {user?.username}
-//             </span>
 
 // <Button onClick={onClose}>Закрыть</Button>
