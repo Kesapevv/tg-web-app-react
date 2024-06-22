@@ -1,0 +1,19 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Установка шрифтов и цветов для основных элементов */
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Основные стили для контейнера приложения */
+.App {
+    text-align: center;
+}
+
+/* Другие глобальные стили */

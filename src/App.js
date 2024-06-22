@@ -1,27 +1,22 @@
 import './App.css';
-import React, {useContext, useEffect} from "react";
-import {useTelegram} from "./hooks/useTelegram";
+import React, { useContext, useEffect } from "react";
+import { useTelegram } from "./hooks/useTelegram";
 import Header from "./components/Header/Header";
-import Coin from "./components/Coin/Coin";
-import {GlobalDataContext, GlobalDataProvider} from './hooks/GlobalDataProvider';
+import { GlobalDataContext, GlobalDataProvider } from './hooks/GlobalDataProvider';
+import { useGlobalData } from './hooks/GlobalDataProvider';
 
 function App() {
-
     const {user, onClose, tg} = useTelegram();
-
-    // const { onTap, totalScore } = useContext(GlobalDataContext);
-
+    const { totalScore, onTap } = useGlobalData();
     useEffect(() => {
         tg.ready();
     }, [])
 
     return (
-        <GlobalDataProvider>
             <div className="App">
                 <Header/>
-                {/*<button onClick={onTap}>click me</button>*/}
+                <button onClick={onTap}>Увеличить счет</button> {/* Добавьте кнопку здесь */}
             </div>
-        </GlobalDataProvider>
     );
 }
 

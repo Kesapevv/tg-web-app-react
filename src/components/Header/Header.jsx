@@ -2,12 +2,12 @@ import React, { useContext } from 'react';
 import Button from "../Button/Button";
 import {useTelegram} from "../../hooks/useTelegram";
 import './Header.css';
-import { GlobalDataContext } from '../../hooks/GlobalDataProvider';
+import { useGlobalData } from '../../hooks/GlobalDataProvider';
 
 const Header = () => {
     const {user, onClose} = useTelegram();
 
-    const { totalScore } = useContext(GlobalDataContext);
+    const { totalScore, onTap } = useGlobalData();
 
     return (
         <div className="header">
