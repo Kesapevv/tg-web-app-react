@@ -21,11 +21,11 @@ function App() {
             <div className="App">
                 <Routes>
                     <Route path="/" element={
-                        <>
+                        <div className="HomeElements">
                             <Header />
                             <Coin onClick={onTap} />
                             <TabBar />
-                        </>
+                        </div>
                     } />
 
                     <Route path="/tasks" element={

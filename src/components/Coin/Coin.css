@@ -1,10 +1,10 @@
 .coin {
-    height: 350px;
-    width: 350px;
+    height: 30vmin; /* Теперь размер зависит от меньшей стороны окна просмотра */
+    width: 30vmin;
     background-color: #555;
     border-radius: 50%;
     position: absolute;
-    top: 22%;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%; /* Отступ сверху равен высоте .header */
+    transform: translate(-50%, -50%); /* Центрирование по горизонтали и вертикали */
 }
