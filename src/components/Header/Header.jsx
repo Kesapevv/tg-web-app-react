@@ -7,11 +7,11 @@ import { useGlobalData } from '../../hooks/GlobalDataProvider';
 const Header = () => {
     const {user, onClose} = useTelegram();
 
-    const { totalScore, onTap } = useGlobalData();
+    const { totalScore, onTap, referals } = useGlobalData();
 
     return (
         <div className="header">
-            <span className="referals">Referals:</span>
+            <span className="referals">Referals: {referals}</span>
             <span className="totalScore">Pedro Coins</span>
             <span className="score">{totalScore}</span>
 

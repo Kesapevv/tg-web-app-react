@@ -7,13 +7,15 @@ export const GlobalDataContext = createContext();
 export const GlobalDataProvider = ({ children }) => {
     const [totalScore, setTotalScore] = useState(0);
 
+    var referals = 0
+
     // Функция для обновления счета
     const onTap = () => {
         setTotalScore(prevTotalScore => prevTotalScore + 1);
     };
 
     return (
-        <GlobalDataContext.Provider value={{ totalScore, onTap }}>
+        <GlobalDataContext.Provider value={{ totalScore, onTap, referals }}>
             {children}
         </GlobalDataContext.Provider>
     );
