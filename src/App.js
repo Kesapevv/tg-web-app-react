@@ -29,12 +29,12 @@ function App() {
                     } />
 
                     <Route path="/tasks" element={
-                        <>
-                            <Header />
-                            <TasksList />
-                            <TabBar />
-                        </>
-                    } />
+                        <div className="HomeElements">
+                            <Header/>
+                            <TasksList/>
+                            <TabBar/>
+                        </div>
+                    }/>
 
                     <Route path="/rating" element={
                         <>

@@ -1,9 +1,3 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Выравнивание по верхнему краю */
-    height: 100vh;
-}
 
 .tasks-list {
     background: gray;
@@ -13,6 +7,11 @@
     padding: 20px 30px;
     align-items: normal;
     justify-content: space-between;
+
+    position: absolute;
+    left: 50%;
+    top: 50%; /* Отступ сверху равен высоте .header */
+    transform: translate(-50%, -50%); /* Центрирование по горизонтали и вертикали */
 }
 
 

@@ -12,7 +12,7 @@ const TasksList = (props) => {
     ];
 
     return (
-        <div className="container">
+
         <div className="tasks-list">
             {tasks.map((task, index) => (
                 <div key={index} className="task">
@@ -24,7 +24,7 @@ const TasksList = (props) => {
                 </div>
             ))}
         </div>
-        </div>
+
     );
 }
 
