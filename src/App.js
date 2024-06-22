@@ -20,8 +20,7 @@ function App() {
         <Router>
             <div className="App">
                 <Routes>
-
-                    <Route path="/home" element={
+                    <Route path="/" element={
                         <>
                             <Header />
                             <Coin onClick={onTap} />
